@@ -155,9 +155,7 @@ def make_coco_transforms(image_set):
 
 
 def build(image_set, args):
-    root = Path(args.coco_path)
-    assert root.exists(), f'provided COCO path {root} does not exist'
-    mode = 'instances'
+
     root = Path("/kaggle/input/datasets/minhluu1205/dtsblurpaper1/dataset_blur_coco")
     PATHS = {
          "train": (
@@ -167,10 +165,6 @@ def build(image_set, args):
         "val": (
             root / "valid" / "img",
             root / "valid" / "instances_val.json",
-        ),
-        "test": (
-            root / "test" / "img",
-            root / "test" / "instances_test.json"
         )
     }
 
