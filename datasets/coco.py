@@ -156,7 +156,7 @@ def make_coco_transforms(image_set):
 
 def build(image_set, args):
 
-    root = Path("/kaggle/input/datasets/minhluu1205/dtsblurpaper1/dataset_blur_coco")
+    root = Path("/kaggle/working/dataset_blur_coco_fixed")
     PATHS = {
          "train": (
             root / "train" / "img",
