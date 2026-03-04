@@ -91,7 +91,7 @@ def build(image_set, args):
     assert img_folder_root.exists(), f'provided COCO path {img_folder_root} does not exist'
     assert ann_folder_root.exists(), f'provided COCO path {ann_folder_root} does not exist'
     mode = 'panoptic'
-    root = Path("/kaggle/input/datasets/minhluu1205/dtsblurpaper1/dataset_blur_coco")
+    root = Path("/kaggle/working/dataset_blur_coco_fixed")
     PATHS = {
          "train": (
             root / "train" / "img",
